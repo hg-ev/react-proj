@@ -5,11 +5,13 @@ export default function Accordian(props) {
 
   const [open, setOpen] = useState(false);
   const toggleAccordian = () => setOpen((s) => !s);
-
+  const accordianClass = open ? 'show': 'hide'
   return (
     <div className="accordian">
       <div onClick={toggleAccordian}>{title}</div>
-      {open && <Component {...data} />}
+      <div className={accordianClass}>
+        <Component {...data} />
+      </div>
     </div>
   );
 }

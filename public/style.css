@@ -31,3 +31,11 @@ button, input[type=number] {
 input[type=number] {
   max-width: 40px;
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
