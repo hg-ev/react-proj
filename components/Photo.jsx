@@ -1,9 +1,9 @@
-import React from "react";
+import React, { memo } from "react";
 
-export default function Photo(props) {
-  return (
-    <>
-      <img alt={props.title} src={props.url} />
-    </>
-  );
+function Photo(props) {
+  const { title, url } = props
+  return <img alt={title} src={url} />;
 }
+
+export default memo(Photo)
+
