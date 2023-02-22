@@ -3,7 +3,7 @@ import usePlaceholder from "../hooks/usePlaceholder";
 
 import Accordian from "../components/Accordian";
 import Button from "../components/Button";
-import Photo from "./Photo";
+import Photo from "../components/Photo";
 
 export default function Photos() {
   const { data, setCount, error } = usePlaceholder();
@@ -35,8 +35,8 @@ export default function Photos() {
   return (
     <>
       <input type="number" ref={inputRef} />
-      <Button onClick={handleButtonPress}>Get Datas!</Button>
-      {error}
+      <Button onClick={handleButtonPress}>Click Me!</Button>
+      <span className="error">{error}</span>
       {accordians}
     </>
   );

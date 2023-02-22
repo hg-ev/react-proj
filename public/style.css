@@ -1,5 +1,33 @@
+@font-face {
+  font-family: "NYCTAStandard-Medium";
+  src: url("NYCTAStandard-Medium.woff2");
+}
+
 body {
   background-color: black;
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: "NYCTAStandard-Medium", sans-serif;
+  max-width: 800px;
+  margin-left: 200px;
+}
+
+.error {
+  color: #EE352E;
+}
+
+.accordian {
+  border-top: 4px solid white;
+  margin-top: 4rem;
+}
+
+button, input[type=number] {
+  font-family: inherit;
+  border: 2px solid white;
+  background-color: inherit;
+  color: currentColor;
+  padding: 0.5rem;
+}
+
+input[type=number] {
+  max-width: 40px;
 }
